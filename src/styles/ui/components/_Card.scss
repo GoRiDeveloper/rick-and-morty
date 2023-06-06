@@ -78,10 +78,19 @@
 
     &__title {
 
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
         margin-top: .563rem;
         color: var(--border-color);
         font-size: 1.4rem;
         font-weight: 600;
+        text-align: center;
+        box-orient: vertical;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
 
     }
 

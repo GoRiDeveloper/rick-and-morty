@@ -50,7 +50,7 @@ export const Card = ({ url }) => {
 
                         </article>
                     )
-                    : (<Loader />)
+                    : (<Loader mRight={ loading ? "--mRight" : null } />)
             }
             
         </>

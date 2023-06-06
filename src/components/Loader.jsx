@@ -1,13 +1,13 @@
-export const Loader = () => {
+export const Loader = ({ mRight }) => {
 
     const 
     
-    spanStack = [1, 2, 3, 4, 5, 6, 7, 8],
+    spanStack   = [1, 2, 3, 4, 5, 6, 7, 8],
     rotateStack = [0, 1, 2, 3, 4];
 
     return (
 
-        <div className="loader">
+        <div className={ mRight ? `loader loader${mRight}` : "loader" } >
             
             <svg className="loader__svg">
                 <filter id="gooey">

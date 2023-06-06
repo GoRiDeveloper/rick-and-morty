@@ -7,6 +7,12 @@
     filter: url(#gooey);
     animation: rotate 16s linear infinite;
 
+    &--mRight {
+
+        margin-right: 4rem;
+
+    }
+
     &__span {
 
         position: absolute;

@@ -19,12 +19,32 @@
         color: var(--border-color);
         font-size: 1.5rem;
         font-weight: 800;
-        transition: color .1s ease-in;
+        transition: all .1s ease-in;
         cursor: pointer;
 
         &:hover {
 
             color: var(--white);
+
+        }
+
+        &--selected {
+
+            position: relative;
+            border: 8px solid var(--main-color);
+            color: var(--black);
+            box-shadow: 0 0 20px 10px var(--border-color);
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 8px solid var(--border-color);
+                border-radius: 50%;
+
+            }
 
         }
 

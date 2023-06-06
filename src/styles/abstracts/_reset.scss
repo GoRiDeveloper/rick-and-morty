@@ -133,6 +133,7 @@ body {
     /* (Opcional) */ font-smooth: always;
     /* (Opcional) */ -webkit-font-smoothing: antialiased;
     /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
     z-index: 1;
 
 }

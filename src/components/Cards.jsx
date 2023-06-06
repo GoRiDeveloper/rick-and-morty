@@ -23,7 +23,9 @@ export const Cards = ({ elements }) => {
                     numPages.map(page => (
 
                         <button 
-                            className="cardsBoxBtns__btn"
+                            className={`cardsBoxBtns__btn ${
+                                currentPage === page && "cardsBoxBtns__btn--selected"
+                            }`}
                             key={page}
                             onClick={() => setCurrentPage(page)}
                         >
