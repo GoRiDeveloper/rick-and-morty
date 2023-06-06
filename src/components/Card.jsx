@@ -14,7 +14,11 @@ export const Card = ({ url }) => {
                         <article className="card">
 
                             <div className="card__boxImage">
-                                <img className="card__image" src={data.image} alt="personaje" />
+                                <img 
+                                    className="card__image"
+                                    src={data.image} 
+                                    alt="personaje" 
+                                />
                             </div>
                             <div className="card__box">
                                 <div className="card__heading">

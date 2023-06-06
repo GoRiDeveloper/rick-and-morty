@@ -1,5 +1,8 @@
+@use "../../abstracts/mixins" as m;
+
 .cardContainerHeader {
 
+    margin-bottom: 8rem;
     padding: 1rem;
     width: 100%;
     display: flex;
@@ -9,6 +12,13 @@
     background-color: var(--main-color);
     border: 8px solid var(--border-color);
     border-radius: 1.875rem;
+
+    @include m.telephone {
+
+        margin: 0 auto 8rem;
+        width: 55%;
+
+    }
 
     &__heading {
 

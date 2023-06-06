@@ -1,3 +1,5 @@
+@use "../../abstracts/mixins" as m;
+
 .card {
 
     position: relative;
@@ -8,6 +10,18 @@
     background-color: var(--tertiary-color);
     border: .5rem solid var(--border-color);
     border-radius: 1.875rem;
+
+    @include m.telephone {
+
+        max-width: 80%;
+
+    }
+
+    @include m.tablet {
+
+        max-width: 23.125rem;
+
+    }
 
     &__boxImage {
 

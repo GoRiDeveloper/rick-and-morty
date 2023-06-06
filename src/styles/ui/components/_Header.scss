@@ -1,6 +1,18 @@
+@use "../../abstracts/mixins" as m;
+
 .header {
 
     padding: 3.7rem 1.4rem;
+
+    @include m.telephone {
+
+        padding: 4rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 1rem;
+
+    };
 
     &__form {
 
@@ -11,6 +23,14 @@
         background-color: var(--white);
         border: 4px solid var(--border-color);
         border-radius: 1.875rem;
+
+        @include m.telephone {
+
+            margin-top: 0;
+            max-width: 635px;
+            padding: .550rem
+
+        };
 
     }
 

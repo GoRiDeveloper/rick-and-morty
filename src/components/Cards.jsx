@@ -4,13 +4,11 @@ import { Card } from "./Card";
 import PropTypes from "prop-types";
 
 export const Cards = ({ elements }) => {
-console.log({elements});
 
     const 
     
     [currentPage, setCurrentPage] = useState(1),
-    { elementsInPage, numPages } = paginationLogic(9, currentPage, elements);
-    console.log(numPages);
+    { elementsInPage, numPages }  = paginationLogic(9, currentPage, elements);
 
     return (
 

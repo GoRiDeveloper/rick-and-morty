@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header";
 import { Loader } from "../../components/Loader";
 
-export const MainLayout = ({ children, loading, pages, setCurrentPage }) => {
+export const MainLayout = ({ children, loading, setSearchData }) => {
 
     return (
 
@@ -13,7 +13,7 @@ export const MainLayout = ({ children, loading, pages, setCurrentPage }) => {
                     ? (<Loader />)
                     : (
                         <>
-                            <Header />
+                            <Header setSearchData={setSearchData} />
                             <div className="layout__container">
 
                                 {children}

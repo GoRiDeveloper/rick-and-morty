@@ -3,10 +3,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(0deg, transparent 0%, #000 77%, rgb(0 0 0 / 0) 100%), 
+    background: //linear-gradient(0deg, transparent 0%, #000 77%, rgb(0 0 0 / 0) 100%), 
                 url(/assets/img/backgrounds/bg-top.jpg) top left, 
-                linear-gradient(180deg, #000 77%, rgb(0 0 0 / 0) 100%),
+                //linear-gradient(180deg, #000 77%, rgb(0 0 0 / 0) 100%),
                 url(/assets/img/backgrounds/bg-bottom.jpg) bottom left;
+
+    background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
+
+    &__container {
+
+        margin: 0 1rem;
+
+    }
 
 }

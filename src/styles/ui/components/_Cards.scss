@@ -1,6 +1,9 @@
 .cardsBoxBtns {
 
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
     gap: 1rem;
 
     &__btn {

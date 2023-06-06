@@ -3,7 +3,6 @@
 .loader {
 
     position: relative;
-    //width: 15.625rem;
     height: 13rem;
     filter: url(#gooey);
     animation: rotate 16s linear infinite;
@@ -22,14 +21,13 @@
 
             content: "";
             position: absolute;
-            //top: calc(50% - 1.25rem);
             top: 0;
             left: calc(50% - 1.25rem);
             width: 2.5rem;
             height: 2.5rem;
-            background-image: linear-gradient(45deg, #c7eeff, #03a9f4);
+            background-image: linear-gradient(45deg, var(--tertiary-color), var(--main-color));
             border-radius: 50%;
-            box-shadow: 0 0 1.875rem #00bcd4;
+            box-shadow: 0 0 1.875rem var(--main-color);
 
         }
 
