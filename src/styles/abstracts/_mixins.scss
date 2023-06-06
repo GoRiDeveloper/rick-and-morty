@@ -1,0 +1,39 @@
+@use "./variables" as v;
+
+@mixin telephone {
+    @media (width > v.$telephone-bp) {
+        @content;
+    };
+};
+
+@mixin tablet {
+    @media (width > v.$tablet-bp) {
+        @content;  
+    };
+};
+
+@mixin desktop {
+    @media (width > v.$desktop-bp) {
+        @content;  
+    };
+};
+
+@mixin rotate {
+
+    @keyframes rotate {
+
+        0% {
+
+            transform: rotate(0deg);
+
+        }
+
+        100% {
+
+            transform: rotate(360deg);
+
+        }
+        
+    }
+
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+$telephone-bp: 450px;
+$tablet-bp: 780px;
+$desktop-bp: 1200px;
+
+:root {
+
+    --main-font: 'Nunito', sans-serif;
+
+    --main-color: #FEEF66;
+    --secondary-color: #938686;
+    --secondary-color-light: #C9BEDC;
+    --tertiary-color: #856888;
+    --border-color: #893446;
+    --white: #fff;
+    --black: #000;
+
+}

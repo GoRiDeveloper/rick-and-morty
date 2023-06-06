@@ -1,0 +1,47 @@
+.header {
+
+    padding: 3.7rem 1.4rem;
+
+    &__form {
+
+        margin-top: 2rem;
+        position: relative;
+        padding: .625rem;
+        width: 100%;
+        background-color: var(--white);
+        border: 4px solid var(--border-color);
+        border-radius: 1.875rem;
+
+    }
+
+    &__input {
+
+        width: 60%;
+        border-radius: inherit;
+        outline: none;
+
+        &::placeholder {
+
+            color: var(--secondary-color);
+
+        }
+
+    }
+
+    &__btn {
+
+        position: absolute;
+        top: -2px;
+        right: -1.5px;
+        width: 40%;
+        height: 110%;
+        background-color: var(--main-color);
+        color: var(--border-color);
+        font-weight: 600;
+        border: 4px solid var(--border-color);
+        border-radius: inherit;
+        cursor: pointer;
+
+    }
+
+}

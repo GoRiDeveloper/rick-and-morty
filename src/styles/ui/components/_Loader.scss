@@ -1,0 +1,54 @@
+@use "../../abstracts/mixins" as m;
+
+.loader {
+
+    position: relative;
+    //width: 15.625rem;
+    height: 13rem;
+    filter: url(#gooey);
+    animation: rotate 16s linear infinite;
+
+    &__span {
+
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(calc(45deg * var(--i)));
+
+        &::before {
+
+            content: "";
+            position: absolute;
+            //top: calc(50% - 1.25rem);
+            top: 0;
+            left: calc(50% - 1.25rem);
+            width: 2.5rem;
+            height: 2.5rem;
+            background-image: linear-gradient(45deg, #c7eeff, #03a9f4);
+            border-radius: 50%;
+            box-shadow: 0 0 1.875rem #00bcd4;
+
+        }
+
+    }
+
+    &__rotate {
+
+        animation: rotate 16s linear infinite;
+        animation-delay: calc(-0.2s * var(--j));
+
+        @include m.rotate();
+
+    }
+
+    &__svg {
+
+        width: 0;
+        height: 0;
+
+    }
+
+}

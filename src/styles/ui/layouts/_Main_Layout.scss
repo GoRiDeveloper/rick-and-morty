@@ -1,0 +1,12 @@
+.layout {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(0deg, transparent 0%, #000 77%, rgb(0 0 0 / 0) 100%), 
+                url(/assets/img/backgrounds/bg-top.jpg) top left, 
+                linear-gradient(180deg, #000 77%, rgb(0 0 0 / 0) 100%),
+                url(/assets/img/backgrounds/bg-bottom.jpg) bottom left;
+    background-repeat: no-repeat, no-repeat;
+
+}
